@@ -1,2 +1,10 @@
 <h1>Angular</h1>
 <courses></courses>
+<favorite [isFavorite]="post.isFavorite" (change)="onFavoriteChange($event)"></favorite>
+<br><br>
+<bootstrap-panel>
+    <ng-container class="heading">My Heading</ng-container>
+    <div class="body">
+        My body
+    </div>
+</bootstrap-panel>
