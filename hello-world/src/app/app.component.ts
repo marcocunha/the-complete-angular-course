@@ -12,8 +12,14 @@ export class AppComponent {
     title: "Title",
     isFavorite: true
   }
+  courses = [1,2,3];
+  viewMode = 'map';
 
   onFavoriteChange(eventArgs: FavoriteChangedEventArgs) {
     console.log("Favorite changed: ", eventArgs.newValue);
+  }
+
+  coursesAvailable() {
+    return this.courses.length > 0;
   }
 }
